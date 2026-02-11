@@ -91,5 +91,4 @@ android-sdk/ -e
 *.env.*
 
 # other
-assets/docs/*.pdf
 INSTRUCTIONS.md
