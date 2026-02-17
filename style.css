@@ -714,6 +714,31 @@ section {
     font-size: 14px;
 }
 
+/* Aligne l'enveloppe et le texte horizontalement */
+.contact-item {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Modifie l'apparence de ton lien */
+#email-contact {
+    color: #9ca3af; /* La belle couleur verte */
+    text-decoration: none; /* Enlève le soulignement bleu */
+    font-weight: bold; /* Le met en gras */
+    transition: color 0.3s ease;
+}
+
+/* Ajoute un effet sympa quand on passe la souris dessus */
+#email-contact:hover {
+    color: #1ed760; /* Devient blanc au survol */
+    text-decoration: underline; 
+}
+
 .built-with {
     display: flex;
     align-items: center;
@@ -794,3 +819,4 @@ section {
         text-align: center;
     }
 }
+

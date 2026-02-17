@@ -34,8 +34,7 @@
                     </a>
                     <a  href="assets/docs/CV_Zoleni_KOKOLO_ZASSI.pdf"
                         target="_blank" 
-                        class="btn-primary" 
-                        download="CV_Zoléni_Kokolo_Zassi.pdf">
+                        class="btn-primary">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                             <polyline points="7 10 12 15 17 10"></polyline>
@@ -404,13 +403,31 @@
 
                 <div class="footer-contact">
                     <h3>Get in Touch</h3>
-                    <a href="mailto:zolenikokolozassi@outlook.com" class="contact-link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <div class="contact-item">
+                    <a href="#" class="contact-link">
+                        <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                             <polyline points="22,6 12,13 2,6"></polyline>
                         </svg>
-                        zolenikokolozassi@outlook.com
                     </a>
+                    <a id="email-contact" href="#">Contact me !</a>
+                    <script>
+                    // 1. On coupe l'adresse en morceaux pour tromper les robots
+                    var user = "zolenikokolozassi";
+                    var domain = "outlook.com";
+                    
+                    // 2. On sélectionne notre lien HTML
+                    var link = document.getElementById("email-contact");
+                    
+                    // 3. On reconstruit l'adresse complète
+                    var fullEmail = user + "@" + domain;
+                    
+                    // 4. On modifie le lien pour qu'il ouvre la boîte mail
+                    link.href = "mailto:" + fullEmail;
+                    </script>
+                    </div>
+
+                    
                     <div class="location">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
