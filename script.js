@@ -21,6 +21,7 @@ const mobileMenu = document.getElementById('mobileMenu');
 mobileMenuBtn.addEventListener('click', () => {
     mobileMenuBtn.classList.toggle('active');
     mobileMenu.classList.toggle('active');
+    header.classList.toggle('menu-open');
 });
 
 // Smooth scroll for all anchor links
@@ -37,6 +38,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             // Close mobile menu if open
             mobileMenuBtn.classList.remove('active');
             mobileMenu.classList.remove('active');
+            header.classList.remove('menu-open');
             
             // Smooth scroll to target
             targetElement.scrollIntoView({

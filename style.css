@@ -34,11 +34,13 @@ header {
     transition: all 0.3s ease;
 }
 
-header.scrolled {
-    background: rgba(0, 0, 0, 0.8);
+header.scrolled,
+header.menu-open {
+    background: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
+
 
 .header-content {
     display: flex;
@@ -160,6 +162,16 @@ header.scrolled {
     border-color: #10b981;
 }
 
+.mobile-menu {
+    display: none;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
 .mobile-menu-btn {
     display: none;
     flex-direction: column;
@@ -168,6 +180,8 @@ header.scrolled {
     border: none;
     cursor: pointer;
     padding: 8px;
+    flex-shrink: 0; /* <-- Empêche le bouton de s'écraser */
+    z-index: 100; /* <-- S'assure qu'il est toujours au premier plan */
 }
 
 .mobile-menu-btn span {
@@ -175,6 +189,7 @@ header.scrolled {
     height: 2px;
     background: #fff;
     transition: all 0.3s ease;
+    flex-shrink: 0; /* <-- Empêche les lignes de s'affiner */
 }
 
 .mobile-menu-btn.active span:nth-child(1) {
