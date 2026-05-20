@@ -1,0 +1,12 @@
+| # | Catégorie      | Contenu                                  |
+|---|----------------|------------------------------------------|
+| 1 | Languages      | Python, C                                |
+| 2 | Web            | HTML5, CSS3, JavaScript                  |
+| 3 | Data Science   | Pandas, NumPy, Matplotlib, SQLite, Excel |
+| 4 | Infrastructure | Docker, LXC, Waydroid                    |
+| 5 | OS & Shell     | Linux, Windows, Bash, PowerShell         |
+| 6 | Dev Tools      | Git, GitHub, Obsidian, VS Code, PyCharm  |
+
+[DONE]
+
+Replace Icons of "Data Science" & "Dev Tools"
