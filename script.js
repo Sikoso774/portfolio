@@ -1,17 +1,28 @@
-// Header scroll effect
+// Header scroll effect + progress bar
 const header = document.getElementById('header');
+const scrollProgress = document.getElementById('scroll-progress');
+const backToTop = document.getElementById('back-to-top');
 let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-    
+
     if (currentScroll > 20) {
         header.classList.add('scrolled');
     } else {
         header.classList.remove('scrolled');
     }
-    
+
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    scrollProgress.style.width = (currentScroll / docHeight * 100) + '%';
+
+    backToTop.classList.toggle('visible', currentScroll > 400);
+
     lastScroll = currentScroll;
+});
+
+backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 // Mobile menu toggle
@@ -78,4 +89,12 @@ document.querySelectorAll('.section-header').forEach(header => {
     header.style.transform = 'translateY(20px)';
     header.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(header);
+});
+
+// Observe skills categories
+document.querySelectorAll('.skills-category').forEach(cat => {
+    cat.style.opacity = '0';
+    cat.style.transform = 'translateY(20px)';
+    cat.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(cat);
 });
