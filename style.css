@@ -41,7 +41,6 @@ header.menu-open {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-
 .header-content {
     display: flex;
     align-items: center;
@@ -403,29 +402,127 @@ section {
     background: rgba(0, 0, 0, 0.3);
 }
 
-.skills-grid {
+.skills-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills-category {
+    background: linear-gradient(to bottom right, rgba(31, 41, 55, 0.9), rgba(17, 24, 39, 0.9));
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 16px;
+    padding: 28px 32px;
+    transition: all 0.3s ease;
+}
+
+.skills-category:hover {
+    border-color: rgba(16, 185, 129, 0.6);
+    box-shadow: 0 8px 24px rgba(16, 185, 129, 0.08);
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(16, 185, 129, 0.15);
+}
+
+.category-header svg {
+    color: #10b981;
+    flex-shrink: 0;
+}
+
+.category-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #10b981;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.skills-icons-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 12px;
 }
 
-.skill-badge {
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 500;
-    border: 1px solid rgba(16, 185, 129, 0.4);
-    background: rgba(17, 24, 39, 0.5);
-    color: #10b981;
-    border-radius: 24px;
-    transition: all 0.3s ease;
+.skill-icon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 18px;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(16, 185, 129, 0.15);
+    border-radius: 12px;
+    transition: all 0.2s ease;
     cursor: default;
+    min-width: 76px;
 }
 
-.skill-badge:hover {
-    background: rgba(16, 185, 129, 0.1);
-    border-color: #10b981;
-    transform: scale(1.05);
+.skill-icon-card:hover {
+    border-color: rgba(16, 185, 129, 0.5);
+    background: rgba(16, 185, 129, 0.06);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(16, 185, 129, 0.12);
+}
+
+.skill-icon-card i {
+    font-size: 36px;
+    line-height: 1;
+}
+
+.skill-icon-card svg {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
+
+.skill-icon-card span {
+    font-size: 11px;
+    font-weight: 500;
+    color: #9ca3af;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.skill-icon-card:hover span {
+    color: #d1d5db;
+}
+
+/* Icons that are dark by default — white so they're visible */
+.skill-icon-light {
+    color: #ffffff;
+}
+
+/* Smooth transition on all icons */
+.skill-icon-card i,
+.skill-icon-card svg {
+    transition: filter 0.25s ease, color 0.25s ease;
+}
+
+/* Green glow on hover for ALL icons (colored ones get a halo, dark ones illuminate) */
+.skill-icon-card:hover i,
+.skill-icon-card:hover svg {
+    filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.75));
+}
+
+/* Dark/neutral devicons turn green on hover */
+.skill-icon-card:hover .skill-icon-light,
+.skill-icon-card:hover .devicon-c-plain {
+    color: #10b981;
+}
+
+/* Custom SVGs — base color green, brighten on hover */
+.skill-svg-icon {
+    color: #10b981;
+}
+
+.skill-icon-card:hover .skill-svg-icon {
+    color: #34d399;
 }
 
 /* Experience Section */
@@ -818,6 +915,22 @@ section {
     .projects-grid,
     .languages-grid {
         grid-template-columns: 1fr;
+    }
+
+    .skills-category {
+        padding: 20px;
+    }
+
+    .skill-icon-card {
+        min-width: 64px;
+        padding: 12px 14px;
+    }
+
+    .skill-icon-card i,
+    .skill-icon-card svg {
+        font-size: 28px;
+        width: 28px;
+        height: 28px;
     }
 
     .interests-grid {

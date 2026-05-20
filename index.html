@@ -1,454 +1,1010 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zoléni Kokolo Zassi - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Header -->
     <header id="header">
-        <div class="container">
-            <div class="header-content">
-                <a href="#hero" class="logo">
-                    <div class="logo-circle"> ZK</div>
-                    <span class="logo-text">Zoléni Kokolo</span>
-                </a>
+      <div class="container">
+        <div class="header-content">
+          <a href="#hero" class="logo">
+            <div class="logo-circle">ZK</div>
+            <span class="logo-text">Zoléni Kokolo</span>
+          </a>
 
-                <nav class="desktop-nav">
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </nav>
+          <nav class="desktop-nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </nav>
 
-                <div class="header-buttons">
-                    <a href="https://github.com/Sikoso774" target="_blank" class="btn-ghost">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                        </svg>
-                        GitHub
-                    </a>
-                    <a href="assets/docs/CV_Zoleni_KOKOLO_ZASSI.pdf" download class="btn-primary">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                            <polyline points="7 10 12 15 17 10"></polyline>
-                            <line x1="12" y1="15" x2="12" y2="3"></line>
-                        </svg>
-                        Download CV
-                    </a>
-                </div>
+          <div class="header-buttons">
+            <a
+              href="https://github.com/Sikoso774"
+              target="_blank"
+              class="btn-ghost"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+              GitHub
+            </a>
+            <a
+              href="assets/docs/CV_Zoleni_KOKOLO_ZASSI.pdf"
+              download
+              class="btn-primary"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download CV
+            </a>
+          </div>
 
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-
-            <!-- Mobile Menu -->
-            <div class="mobile-menu" id="mobileMenu">
-                <nav>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                    <a href="https://github.com/Sikoso774" target="_blank" class="btn-ghost">GitHub</a>
-                    <a href="assets/docs/CV_Zoleni_KOKOLO_ZASSI.pdf" download class="btn-primary">Download CV</a>
-                </nav>
-            </div>
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+          <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a
+              href="https://github.com/Sikoso774"
+              target="_blank"
+              class="btn-ghost"
+              >GitHub</a
+            >
+            <a
+              href="assets/docs/CV_Zoleni_KOKOLO_ZASSI.pdf"
+              download
+              class="btn-primary"
+              >Download CV</a
+            >
+          </nav>
+        </div>
+      </div>
     </header>
 
     <!-- Hero Section -->
     <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-grid">
-                <div class="hero-image">
-                    <div class="profile-halo"></div>
-                    <div class="profile-circle"> <img src="assets/images/photo_profile.jpg" alt="Test"></div>
-                </div>
-                <div class="hero-content">
-                    <div class="badge">Welcome to my portfolio</div>
-                    <h1>Hi there!</h1>
-                    <p>I'm <span class="highlight">Zoléni Kokolo Zassi</span> — a passionate IT student at ENSEA Cergy, specializing in Data Science, software development, and digital innovation. I'm driven by curiosity, creativity, and the desire to build impactful solutions.</p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn-primary">See My Work →</a>
-                        <a href="#contact" class="btn-outline">Get in Touch</a>
-                        <a 
-                        href="https://www.linkedin.com/in/zoléni-kokolo-zassi-280a282ba" 
-                        class="btn-linkedin"
-                        target="_blank"
-                        >
-                    LinkedIn Profile
-                        </a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-image">
+            <div class="profile-halo"></div>
+            <div class="profile-circle">
+              <img src="assets/images/photo_profile.jpg" alt="Test" />
             </div>
+          </div>
+          <div class="hero-content">
+            <div class="badge">Welcome to my portfolio</div>
+            <h1>Hi there!</h1>
+            <p>
+              I'm <span class="highlight">Zoléni Kokolo Zassi</span> — a Python
+              Developer & Junior Full Stack Developer passionate about
+              automation, infrastructure migration (Docker/LXC), and building
+              concrete end-to-end software solutions. I'm driven by curiosity,
+              creativity, and the desire to solve real-world problems.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn-primary">See My Work →</a>
+              <a href="#contact" class="btn-outline">Get in Touch</a>
+              <a
+                href="https://www.linkedin.com/in/zoléni-kokolo-zassi-280a282ba"
+                class="btn-linkedin"
+                target="_blank"
+              >
+                LinkedIn Profile
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2>My Journey So Far</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="card">
-                <p>I'm currently pursuing my <span class="highlight">Bachelor Human-IT at ENSEA de Cergy (95)</span>, focusing on information technologies and their impact on society. My experiences include internships in network engineering and automation at Rhôn Telecom and exploratory projects in teaching and digital learning.</p>
-                <div class="quote-box">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                    </svg>
-                    <p>"Fuelled by curiosity, committed to quality, inspired by technology."</p>
-                </div>
-                <p>My passion lies in exploring how technology can solve real-world problems and improve people's lives. Whether it's through data analysis, software development, or innovative digital solutions, I'm always eager to learn and create meaningful impact.</p>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2>My Journey So Far</h2>
+          <div class="underline"></div>
         </div>
+        <div class="card">
+          <p>
+            I'm currently pursuing my
+            <span class="highlight"
+              >Bachelor Human-IT at ENSEA de Cergy (95)</span
+            >, focusing on information technologies and their impact on society.
+            My experiences span infrastructure migration (Docker to
+            LXC/Waydroid), Python/Bash automation scripting, and full stack
+            development.
+          </p>
+          <div class="quote-box">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+              ></path>
+            </svg>
+            <p>
+              "Fuelled by curiosity, committed to quality, inspired by
+              technology."
+            </p>
+          </div>
+          <p>
+            My passion lies in automation and building concrete end-to-end
+            solutions — from Linux server deployment to full stack web
+            applications. I love turning complex infrastructure and software
+            challenges into clean, working systems.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2>Skills & Expertise</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="skills-grid">
-                <span class="skill-badge">Python</span>
-                <span class="skill-badge">Pandas</span>
-                <span class="skill-badge">Numpy</span>
-                <span class="skill-badge">Matplotlib</span>
-                <span class="skill-badge">HTML/CSS</span>
-                <span class="skill-badge">C (notions)</span>
-                <span class="skill-badge">VBA</span>
-                <span class="skill-badge">Node.js</span>
-                <span class="skill-badge">Next.js</span>
-                <span class="skill-badge">Windows</span>
-                <span class="skill-badge">Linux</span>
-                <span class="skill-badge">Data Science</span>
-                <span class="skill-badge">Excel</span>
-                <span class="skill-badge">PowerPoint</span>
-                <span class="skill-badge">Communication</span>
-                <span class="skill-badge">Curiosity</span>
-                <span class="skill-badge">Teamwork</span>
-                <span class="skill-badge">Leadership</span>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2>Skills & Expertise</h2>
+          <div class="underline"></div>
         </div>
+        <div class="skills-categories">
+          <!-- Bureautique -->
+          <div class="skills-category">
+            <div class="category-header">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              <h3>Bureautique</h3>
+            </div>
+            <div class="skills-icons-row">
+              <div class="skill-icon-card">
+                <svg
+                  class="skill-svg-icon"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <line x1="3" y1="9" x2="21" y2="9" />
+                  <line x1="3" y1="15" x2="21" y2="15" />
+                  <line x1="9" y1="3" x2="9" y2="21" />
+                  <line x1="15" y1="3" x2="15" y2="21" />
+                </svg>
+                <span>Excel</span>
+              </div>
+              <div class="skill-icon-card">
+                <svg
+                  class="skill-svg-icon"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="2" y="4" width="20" height="14" rx="2" />
+                  <path d="M8 21h8M12 18v3" />
+                  <rect x="6" y="8" width="5" height="4" rx="1" />
+                  <line x1="14" y1="8" x2="18" y2="8" />
+                  <line x1="14" y1="12" x2="18" y2="12" />
+                </svg>
+                <span>PowerPoint</span>
+              </div>
+              <div class="skill-icon-card">
+                <svg
+                  class="skill-svg-icon"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <span>VBA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programming -->
+          <div class="skills-category">
+            <div class="category-header">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <h3>Programming</h3>
+            </div>
+            <div class="skills-icons-row">
+              <div class="skill-icon-card">
+                <i class="devicon-python-plain colored"></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-icon-card">
+                <i class="devicon-pandas-plain colored"></i>
+                <span>Pandas</span>
+              </div>
+              <div class="skill-icon-card">
+                <i class="devicon-numpy-plain colored"></i>
+                <span>NumPy</span>
+              </div>
+              <div class="skill-icon-card">
+                <svg
+                  class="skill-svg-icon"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                  <line x1="2" y1="20" x2="22" y2="20"></line>
+                </svg>
+                <span>Matplotlib</span>
+              </div>
+              <div class="skill-icon-card">
+                <svg
+                  class="skill-svg-icon"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+                <span>SQL</span>
+              </div>
+              <div class="skill-icon-card">
+                <i class="devicon-c-plain colored"></i>
+                <span>C</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Front End -->
+          <div class="skills-category">
+            <div class="category-header">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+              <h3>Front End</h3>
+            </div>
+            <div class="skills-icons-row">
+              <div class="skill-icon-card">
+                <i class="devicon-html5-plain colored"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-icon-card">
+                <i class="devicon-css3-plain colored"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-icon-card">
+                <i class="devicon-javascript-plain colored"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-icon-card">
+                <i class="devicon-nextjs-plain skill-icon-light"></i>
+                <span>Next.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Back End / DevOps -->
+          <div class="skills-category">
+            <div class="category-header">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="2" width="20" height="8" rx="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+              <h3>Back End / DevOps</h3>
+            </div>
+            <div class="skills-icons-row">
+              <div class="skill-icon-card">
+                <i class="devicon-nodejs-plain colored"></i>
+                <span>Node.js</span>
+              </div>
+              <div class="skill-icon-card">
+                <i class="devicon-docker-plain colored"></i>
+                <span>Docker</span>
+              </div>
+              <div class="skill-icon-card">
+                <svg
+                  class="skill-svg-icon"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                  ></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+                <span>LXC</span>
+              </div>
+              <div class="skill-icon-card">
+                <svg
+                  class="skill-svg-icon"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="3" y="11" width="18" height="11" rx="2" />
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                  <line x1="12" y1="3" x2="12" y2="6" />
+                  <line x1="8.5" y1="3.5" x2="7.5" y2="5.5" />
+                  <line x1="15.5" y1="3.5" x2="16.5" y2="5.5" />
+                  <circle cx="9" cy="16" r="1" fill="currentColor" />
+                  <circle cx="15" cy="16" r="1" fill="currentColor" />
+                </svg>
+                <span>Waydroid</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- OS & Shell -->
+          <div class="skills-category">
+            <div class="category-header">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+              <h3>OS & Shell</h3>
+            </div>
+            <div class="skills-icons-row">
+              <div class="skill-icon-card">
+                <i class="devicon-windows8-plain colored"></i>
+                <span>Windows</span>
+              </div>
+              <div class="skill-icon-card">
+                <i class="devicon-linux-plain colored"></i>
+                <span>Linux</span>
+              </div>
+              <div class="skill-icon-card">
+                <i class="devicon-bash-plain skill-icon-light"></i>
+                <span>Bash</span>
+              </div>
+              <div class="skill-icon-card">
+                <i class="devicon-powershell-plain colored"></i>
+                <span>PowerShell</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <h2>Experience</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="experience-list">
-                <div class="card experience-card">
-                    <div class="experience-header">
-                        <div class="icon-wrapper">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                            </svg>
-                        </div>
-                        <span class="year">2025</span>
-                    </div>
-                    <h3>Network Engineering Intern</h3>
-                    <p class="company">Rhôn Telecom</p>
-                    <p class="description">Developed automation tools with VBA, Node.js, and Next.js to improve productivity and streamline network operations.</p>
-                </div>
-
-                <div class="card experience-card">
-                    <div class="experience-header">
-                        <div class="icon-wrapper">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                            </svg>
-                        </div>
-                        <span class="year">2024</span>
-                    </div>
-                    <h3>Scratch Programming Workshop for Children</h3>
-                    <p class="company">Teaching Internship</p>
-                    <p class="description">Created an introduction to coding and guided students through their first programming experience, fostering creativity and logical thinking.</p>
-                </div>
-
-                <div class="card experience-card">
-                    <div class="experience-header">
-                        <div class="icon-wrapper">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                            </svg>
-                        </div>
-                        <span class="year">2020</span>
-                    </div>
-                    <h3>Observation Internship</h3>
-                    <p class="company">Alstom Transport</p>
-                    <p class="description">Discovered industrial processes and railway production systems, gaining insights into large-scale engineering projects.</p>
-                </div>
-            </div>
-
-            <div class="section-header" style="margin-top: 60px;">
-                <h2>Education</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="education-grid">
-                <div class="card education-card">
-                    <span class="year">2023–2026</span>
-                    <h3>Bachelor Human-IT</h3>
-                    <p class="company">ENSEA de Cergy</p>
-                    <p class="description">Specializing in information technologies and their societal impact, data science, and software development.</p>
-                </div>
-
-                <div class="card education-card">
-                    <span class="year">2023</span>
-                    <h3>Baccalauréat Général</h3>
-                    <p class="company">Lycée Bossuet de Meaux</p>
-                    <p class="description">Mathématiques expertes - Strong foundation in mathematics and analytical thinking.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2>Experience</h2>
+          <div class="underline"></div>
         </div>
+        <div class="experience-list">
+          <div class="card experience-card">
+            <div class="experience-header">
+              <div class="icon-wrapper">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <span class="year">Nov 2025 – Jan 2026</span>
+            </div>
+            <h3>Infrastructure & Backend Python Engineer Intern</h3>
+            <p class="company">Maison Astéria</p>
+            <p class="description">
+              Migration from Docker to LXC/Waydroid, Python and Bash
+              orchestration scripting, and Linux server deployment for bot
+              farming infrastructure.
+            </p>
+          </div>
+
+          <div class="card experience-card">
+            <div class="experience-header">
+              <div class="icon-wrapper">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <span class="year">May 2025 – Jun 2025</span>
+            </div>
+            <h3>Full Stack Developer & Automation Intern</h3>
+            <p class="company">Rhôn Telecom</p>
+            <p class="description">
+              Developed automation tools with VBA, Node.js, and Next.js to
+              improve productivity and streamline network operations.
+            </p>
+          </div>
+
+          <div class="card experience-card">
+            <div class="experience-header">
+              <div class="icon-wrapper">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <span class="year">2024</span>
+            </div>
+            <h3>Scratch Programming Workshop for Children</h3>
+            <p class="company">Teaching Internship</p>
+            <p class="description">
+              Created an introduction to coding and guided students through
+              their first programming experience, fostering creativity and
+              logical thinking.
+            </p>
+          </div>
+
+          <div class="card experience-card">
+            <div class="experience-header">
+              <div class="icon-wrapper">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <span class="year">2020</span>
+            </div>
+            <h3>Observation Internship</h3>
+            <p class="company">Alstom Transport</p>
+            <p class="description">
+              Discovered industrial processes and railway production systems,
+              gaining insights into large-scale engineering projects.
+            </p>
+          </div>
+        </div>
+
+        <div class="section-header" style="margin-top: 60px">
+          <h2>Education</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="education-grid">
+          <div class="card education-card">
+            <span class="year">2023–2026</span>
+            <h3>Bachelor Human-IT</h3>
+            <p class="company">ENSEA de Cergy</p>
+            <p class="description">
+              Specializing in information technologies and their societal
+              impact, data science, and software development.
+            </p>
+          </div>
+
+          <div class="card education-card">
+            <span class="year">2023</span>
+            <h3>Baccalauréat Général</h3>
+            <p class="company">Lycée Bossuet de Meaux</p>
+            <p class="description">
+              Mathématiques expertes - Strong foundation in mathematics and
+              analytical thinking.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2>Featured Projects</h2>
-                <div class="underline"></div>
-                <p class="section-description">A selection of projects showcasing my skills in software development, data science, and digital innovation.</p>
-            </div>
-            <div class="projects-grid">
-                <div class="card project-card">
-                    <h3>Network Automation Suite</h3>
-                    <p>Developed comprehensive automation tools using VBA, Node.js, and Next.js to streamline network engineering workflows at Rhôn Telecom, significantly improving team productivity.</p>
-                    <div class="tags">
-                        <span>VBA</span>
-                        <span>Node.js</span>
-                        <span>Next.js</span>
-                        <span>Automation</span>
-                    </div>
-                </div>
-
-                <div class="card project-card">
-                    <h3>HYPNOTICA</h3>
-                    <p>A 2nd year ENSEA project showcasing innovative approaches to interactive applications. Built with modern technologies and focusing on user experience.</p>
-                    <div class="tags">
-                        <span>Python</span>
-                        <span><a href="https://pyga.me/docs" target="_blank">Pygame</a></span>
-                        <span>Web Development</span>
-                    </div>
-                    <a href="https://github.com/Sikoso774/HYPNOTICA_V4" target="_blank" class="btn-outline">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                        </svg>
-                        View Code
-                    </a>
-                </div>
-
-                <div class="card project-card">
-                    <h3>Scratch Programming Workshop</h3>
-                    <p>Created an engaging introduction to programming for children, developing curriculum materials and interactive exercises to make coding accessible and fun.</p>
-                    <div class="tags">
-                        <span>Education</span>
-                        <span>Scratch</span>
-                        <span>Teaching</span>
-                        <span>Curriculum Design</span>
-                    </div>
-                </div>
-
-                <div class="card project-card">
-                    <h3>Data Science Projects</h3>
-                    <p>Collection of data analysis and visualization projects using Python, Pandas, Numpy, and Matplotlib. Exploring patterns, insights, and predictive modeling.</p>
-                    <div class="tags">
-                        <span>Python</span>
-                        <span>Pandas</span>
-                        <span>Numpy</span>
-                        <span>Matplotlib</span>
-                        <span>Data Analysis</span>
-                    </div>
-                    <a href="https://github.com/Sikoso774" target="_blank" class="btn-outline">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                        </svg>
-                        View Code
-                    </a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Projects</h2>
+          <div class="underline"></div>
+          <p class="section-description">
+            A selection of projects showcasing my skills in software
+            development, data science, and digital innovation.
+          </p>
         </div>
+        <div class="projects-grid">
+          <div class="card project-card">
+            <h3>Network Automation Suite</h3>
+            <p>
+              Developed comprehensive automation tools using VBA, Node.js, and
+              Next.js to streamline network engineering workflows at Rhôn
+              Telecom, significantly improving team productivity.
+            </p>
+            <div class="tags">
+              <span>VBA</span>
+              <span>Node.js</span>
+              <span>Next.js</span>
+              <span>Automation</span>
+            </div>
+          </div>
+
+          <div class="card project-card">
+            <h3>HYPNOTICA</h3>
+            <p>
+              A 2nd year ENSEA project showcasing innovative approaches to
+              interactive applications. Built with modern technologies and
+              focusing on user experience.
+            </p>
+            <div class="tags">
+              <span>Python</span>
+              <span
+                ><a href="https://pyga.me/docs" target="_blank">Pygame</a></span
+              >
+              <span>Web Development</span>
+            </div>
+            <a
+              href="https://github.com/Sikoso774/HYPNOTICA_V4"
+              target="_blank"
+              class="btn-outline"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+              View Code
+            </a>
+          </div>
+
+          <div class="card project-card">
+            <h3>Scratch Programming Workshop</h3>
+            <p>
+              Created an engaging introduction to programming for children,
+              developing curriculum materials and interactive exercises to make
+              coding accessible and fun.
+            </p>
+            <div class="tags">
+              <span>Education</span>
+              <span>Scratch</span>
+              <span>Teaching</span>
+              <span>Curriculum Design</span>
+            </div>
+          </div>
+
+          <div class="card project-card">
+            <h3>zolenikokolo.com</h3>
+            <p>
+              Personal portfolio built entirely from scratch in pure HTML/CSS/JS
+              — no templates, no frameworks. Designed, coded, and deployed via
+              GitHub Pages end-to-end.
+            </p>
+            <div class="tags">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>GitHub Pages</span>
+              <span>Web Deployment</span>
+            </div>
+          </div>
+
+          <div class="card project-card">
+            <h3>Data Science Projects</h3>
+            <p>
+              Collection of data analysis and visualization projects using
+              Python, Pandas, Numpy, and Matplotlib. Exploring patterns,
+              insights, and predictive modeling.
+            </p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>Numpy</span>
+              <span>Matplotlib</span>
+              <span>Data Analysis</span>
+            </div>
+            <a
+              href="https://github.com/Sikoso774"
+              target="_blank"
+              class="btn-outline"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+              View Code
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Languages & Interests Section -->
     <section id="languages" class="languages">
-        <div class="container">
-            <div class="languages-grid">
-                <div>
-                    <div class="section-title">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="2" y1="12" x2="22" y2="12"></line>
-                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                        </svg>
-                        <h2>Languages</h2>
-                    </div>
-                    <div class="language-list">
-                        <div class="card language-card">
-                            <span class="flag">🇫🇷</span>
-                            <span class="lang-name">French</span>
-                            <span class="level">Native</span>
-                        </div>
-                        <div class="card language-card">
-                            <span class="flag">🇬🇧</span>
-                            <span class="lang-name">English</span>
-                            <span class="level">B1</span>
-                        </div>
-                        <div class="card language-card">
-                            <span class="flag">🇪🇸</span>
-                            <span class="lang-name">Spanish</span>
-                            <span class="level">B1</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="section-title">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 18V5l12-2v13"></path>
-                            <circle cx="6" cy="18" r="3"></circle>
-                            <circle cx="18" cy="16" r="3"></circle>
-                        </svg>
-                        <h2>Interests</h2>
-                    </div>
-                    <div class="interests-grid">
-                        <div class="card interest-card">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                                <path d="M4 22h16"></path>
-                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2z"></path>
-                            </svg>
-                            <span>Football</span>
-                        </div>
-                        <div class="card interest-card">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                                <path d="M4 22h16"></path>
-                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2z"></path>
-                            </svg>
-                            <span>Handball</span>
-                        </div>
-                        <div class="card interest-card">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 18V5l12-2v13"></path>
-                                <circle cx="6" cy="18" r="3"></circle>
-                                <circle cx="18" cy="16" r="3"></circle>
-                            </svg>
-                            <span>Music (Cornet)</span>
-                        </div>
-                        <div class="card interest-card">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="6" y="2" width="12" height="20" rx="2"></rect>
-                                <circle cx="12" cy="8" r="1"></circle>
-                            </svg>
-                            <span>Gaming</span>
-                        </div>
-                        <div class="card interest-card">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                            </svg>
-                            <span>Data Science</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="languages-grid">
+          <div>
+            <div class="section-title">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                ></path>
+              </svg>
+              <h2>Languages</h2>
             </div>
+            <div class="language-list">
+              <div class="card language-card">
+                <span class="flag">🇫🇷</span>
+                <span class="lang-name">French</span>
+                <span class="level">Native</span>
+              </div>
+              <div class="card language-card">
+                <span class="flag">🇬🇧</span>
+                <span class="lang-name">English</span>
+                <span class="level">B1</span>
+              </div>
+              <div class="card language-card">
+                <span class="flag">🇪🇸</span>
+                <span class="lang-name">Spanish</span>
+                <span class="level">B1</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="section-title">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M9 18V5l12-2v13"></path>
+                <circle cx="6" cy="18" r="3"></circle>
+                <circle cx="18" cy="16" r="3"></circle>
+              </svg>
+              <h2>Interests</h2>
+            </div>
+            <div class="interests-grid">
+              <div class="card interest-card">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                  <path d="M4 22h16"></path>
+                  <path
+                    d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"
+                  ></path>
+                  <path
+                    d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"
+                  ></path>
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2z"></path>
+                </svg>
+                <span>Football</span>
+              </div>
+              <div class="card interest-card">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                  <path d="M4 22h16"></path>
+                  <path
+                    d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"
+                  ></path>
+                  <path
+                    d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"
+                  ></path>
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2z"></path>
+                </svg>
+                <span>Handball</span>
+              </div>
+              <div class="card interest-card">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M9 18V5l12-2v13"></path>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <circle cx="18" cy="16" r="3"></circle>
+                </svg>
+                <span>Music (Cornet)</span>
+              </div>
+              <div class="card interest-card">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="6" y="2" width="12" height="20" rx="2"></rect>
+                  <circle cx="12" cy="8" r="1"></circle>
+                </svg>
+                <span>Gaming</span>
+              </div>
+              <div class="card interest-card">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+                <span>Data Science</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer id="contact" class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <div class="logo">
-                        <div class="logo-circle">ZK</div>
-                        <span class="logo-text">Zoléni Kokolo</span>
-                    </div>
-                    <p>IT Student specializing in Data Science and Human-IT technologies. Building impactful digital solutions.</p>
-                </div>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <div class="logo">
+              <div class="logo-circle">ZK</div>
+              <span class="logo-text">Zoléni Kokolo</span>
+            </div>
+            <p>
+              IT Student specializing in Data Science and Human-IT technologies.
+              Building impactful digital solutions.
+            </p>
+          </div>
 
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#projects">Projects</a>
-                </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+          </div>
 
-                <div class="footer-contact">
-                    <h3>Get in Touch</h3>
-                    <div class="contact-item">
-                    <a href="#" class="contact-link">
-                        <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                    </a>
-                    <a id="email-contact" href="#">Contact me !</a>
-                    <script>
-                    // 1. On coupe l'adresse en morceaux pour tromper les robots
-                    var user = "zolenikokolozassi";
-                    var domain = "outlook.com";
-                    
-                    // 2. On sélectionne notre lien HTML
-                    var link = document.getElementById("email-contact");
-                    
-                    // 3. On reconstruit l'adresse complète
-                    var fullEmail = user + "@" + domain;
-                    
-                    // 4. On modifie le lien pour qu'il ouvre la boîte mail
-                    link.href = "mailto:" + fullEmail;
-                    </script>
-                    </div>
+          <div class="footer-contact">
+            <h3>Get in Touch</h3>
+            <div class="contact-item">
+              <a href="#" class="contact-link">
+                <svg
+                  class="contact-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+              <a id="email-contact" href="#">Contact me !</a>
+              <script>
+                // 1. On coupe l'adresse en morceaux pour tromper les robots
+                var user = "zolenikokolozassi";
+                var domain = "outlook.com";
 
-                    
-                    <div class="location">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
-                        Chauconin-Neufmontiers, France
-                    </div>
-                    <a href="https://github.com/Sikoso774" target="_blank" class="btn-outline github-btn">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                        </svg>
-                        github.com/Sikoso774
-                    </a>
-                </div>
+                // 2. On sélectionne notre lien HTML
+                var link = document.getElementById("email-contact");
+
+                // 3. On reconstruit l'adresse complète
+                var fullEmail = user + "@" + domain;
+
+                // 4. On modifie le lien pour qu'il ouvre la boîte mail
+                link.href = "mailto:" + fullEmail;
+              </script>
             </div>
 
-            <div class="footer-bottom">
-                <p>© 2025 Zoléni Kokolo Zassi. All rights reserved.</p>
-                <p class="built-with">Built with <span class="heart">❤️</span> by Zoléni Kokolo Zassi</p>
+            <div class="location">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Chauconin-Neufmontiers, France
             </div>
+            <a
+              href="https://github.com/Sikoso774"
+              target="_blank"
+              class="btn-outline github-btn"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+              github.com/Sikoso774
+            </a>
+          </div>
         </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 Zoléni Kokolo Zassi. All rights reserved.</p>
+          <p class="built-with">
+            Built with <span class="heart">❤️</span> by Zoléni Kokolo Zassi
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
