@@ -461,6 +461,7 @@ section {
     transition: all 0.2s ease;
     cursor: default;
     min-width: 76px;
+    color: #a9bacd;
 }
 
 .skill-icon-card:hover {
@@ -468,17 +469,26 @@ section {
     background: rgba(16, 185, 129, 0.06);
     transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(16, 185, 129, 0.12);
-}
-
-.skill-icon-card i {
-    font-size: 36px;
-    line-height: 1;
+    color: #10b981;
 }
 
 .skill-icon-card svg {
     width: 36px;
     height: 36px;
     flex-shrink: 0;
+    transition: filter 0.25s ease;
+}
+
+.skill-icon-card .skill-img-icon {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    filter: grayscale(100%) brightness(0.65);
+    transition: filter 0.25s ease;
+}
+
+.skill-icon-card:hover .skill-img-icon {
+    filter: grayscale(0%) brightness(1) drop-shadow(0 0 8px rgba(16, 185, 129, 0.75));
 }
 
 .skill-icon-card span {
@@ -493,36 +503,8 @@ section {
     color: #d1d5db;
 }
 
-/* Icons that are dark by default — white so they're visible */
-.skill-icon-light {
-    color: #ffffff;
-}
-
-/* Smooth transition on all icons */
-.skill-icon-card i,
-.skill-icon-card svg {
-    transition: filter 0.25s ease, color 0.25s ease;
-}
-
-/* Green glow on hover for ALL icons (colored ones get a halo, dark ones illuminate) */
-.skill-icon-card:hover i,
 .skill-icon-card:hover svg {
     filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.75));
-}
-
-/* Dark/neutral devicons turn green on hover */
-.skill-icon-card:hover .skill-icon-light,
-.skill-icon-card:hover .devicon-c-plain {
-    color: #10b981;
-}
-
-/* Custom SVGs — base color green, brighten on hover */
-.skill-svg-icon {
-    color: #10b981;
-}
-
-.skill-icon-card:hover .skill-svg-icon {
-    color: #34d399;
 }
 
 /* Experience Section */
@@ -926,9 +908,8 @@ section {
         padding: 12px 14px;
     }
 
-    .skill-icon-card i,
-    .skill-icon-card svg {
-        font-size: 28px;
+    .skill-icon-card svg,
+    .skill-icon-card .skill-img-icon {
         width: 28px;
         height: 28px;
     }

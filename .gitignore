@@ -90,5 +90,6 @@ android-sdk/ -e
 *.env
 *.env.*
 
-# other
+# claude-agent
 CLAUDE.md
+.claude/
