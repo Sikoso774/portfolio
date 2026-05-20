@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+  </head>
   <body>
     <!-- Header -->
     <header id="header">
@@ -42,7 +43,8 @@
                 stroke="currentColor"
                 stroke-width="2"
               >
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
                 ></path>
               </svg>
               GitHub
@@ -249,22 +251,21 @@
           <div class="skills-category">
             <div class="category-header">
               <svg
-                width="20"
-                height="20"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
               >
-                <rect x="2" y="2" width="20" height="8" rx="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
               </svg>
               <h3>Data Science</h3>
             </div>
             <div class="skills-icons-row">
-                <div class="skill-icon-card">
+              <div class="skill-icon-card">
                 <!-- prettier-ignore -->
                 <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.922 0h2.623v18.104h-2.623zm-4.126 12.94h2.623v2.57h-2.623zm0-7.037h2.623v5.446h-2.623zm0 11.197h2.623v5.446h-2.623zM4.456 5.896h2.622V24H4.455zm4.213 2.559h2.623v2.57H8.67zm0 4.151h2.623v5.447H8.67zm0-11.187h2.623v5.446H8.67Z"/></svg>
                 <span>Pandas</span>
@@ -298,7 +299,7 @@
             </div>
           </div>
 
-          <!-- Back End / DevOps -->
+          <!-- DevOps -->
           <div class="skills-category">
             <div class="category-header">
               <svg
@@ -308,14 +309,23 @@
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               >
-                <rect x="2" y="2" width="20" height="8" rx="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
               </svg>
               <h3>Back End / DevOps</h3>
             </div>
+
             <div class="skills-icons-row">
               <div class="skill-icon-card">
                 <!-- prettier-ignore -->
@@ -389,9 +399,12 @@
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               >
-                <polyline points="4 17 10 11 4 5"></polyline>
-                <line x1="12" y1="19" x2="20" y2="19"></line>
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                ></path>
               </svg>
               <h3>Dev Tools</h3>
             </div>
@@ -407,8 +420,16 @@
                 <span>GitHub</span>
               </div>
               <div class="skill-icon-card">
-                <svg role="img" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <title>Obsidian</title><path d="M19.355 18.538a68.967 68.959 0 0 0 1.858-2.954.81.81 0 0 0-.062-.9c-.516-.685-1.504-2.075-2.042-3.362-.553-1.321-.636-3.375-.64-4.377a1.707 1.707 0 0 0-.358-1.05l-3.198-4.064a3.744 3.744 0 0 1-.076.543c-.106.503-.307 1.004-.536 1.5-.134.29-.29.6-.446.914l-.31.626c-.516 1.068-.997 2.227-1.132 3.59-.124 1.26.046 2.73.815 4.481.128.011.257.025.386.044a6.363 6.363 0 0 1 3.326 1.505c.916.79 1.744 1.922 2.415 3.5zM8.199 22.569c.073.012.146.02.22.02.78.024 2.095.092 3.16.29.87.16 2.593.64 4.01 1.055 1.083.316 2.198-.548 2.355-1.664.114-.814.33-1.735.725-2.58l-.01.005c-.67-1.87-1.522-3.078-2.416-3.849a5.295 5.295 0 0 0-2.778-1.257c-1.54-.216-2.952.19-3.84.45.532 2.218.368 4.829-1.425 7.531zM5.533 9.938c-.023.1-.056.197-.098.29L2.82 16.059a1.602 1.602 0 0 0 .313 1.772l4.116 4.24c2.103-3.101 1.796-6.02.836-8.3-.728-1.73-1.832-3.081-2.55-3.831zM9.32 14.01c.615-.183 1.606-.465 2.745-.534-.683-1.725-.848-3.233-.716-4.577.154-1.552.7-2.847 1.235-3.95.113-.235.223-.454.328-.664.149-.297.288-.577.419-.86.217-.47.379-.885.46-1.27.08-.38.08-.72-.014-1.043-.095-.325-.297-.675-.68-1.06a1.6 1.6 0 0 0-1.475.36l-4.95 4.452a1.602 1.602 0 0 0-.513.952l-.427 2.83c.672.59 2.328 2.316 3.335 4.711.09.21.175.43.253.653z"/>
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Obsidian</title>
+                  <path
+                    d="M19.355 18.538a68.967 68.959 0 0 0 1.858-2.954.81.81 0 0 0-.062-.9c-.516-.685-1.504-2.075-2.042-3.362-.553-1.321-.636-3.375-.64-4.377a1.707 1.707 0 0 0-.358-1.05l-3.198-4.064a3.744 3.744 0 0 1-.076.543c-.106.503-.307 1.004-.536 1.5-.134.29-.29.6-.446.914l-.31.626c-.516 1.068-.997 2.227-1.132 3.59-.124 1.26.046 2.73.815 4.481.128.011.257.025.386.044a6.363 6.363 0 0 1 3.326 1.505c.916.79 1.744 1.922 2.415 3.5zM8.199 22.569c.073.012.146.02.22.02.78.024 2.095.092 3.16.29.87.16 2.593.64 4.01 1.055 1.083.316 2.198-.548 2.355-1.664.114-.814.33-1.735.725-2.58l-.01.005c-.67-1.87-1.522-3.078-2.416-3.849a5.295 5.295 0 0 0-2.778-1.257c-1.54-.216-2.952.19-3.84.45.532 2.218.368 4.829-1.425 7.531zM5.533 9.938c-.023.1-.056.197-.098.29L2.82 16.059a1.602 1.602 0 0 0 .313 1.772l4.116 4.24c2.103-3.101 1.796-6.02.836-8.3-.728-1.73-1.832-3.081-2.55-3.831zM9.32 14.01c.615-.183 1.606-.465 2.745-.534-.683-1.725-.848-3.233-.716-4.577.154-1.552.7-2.847 1.235-3.95.113-.235.223-.454.328-.664.149-.297.288-.577.419-.86.217-.47.379-.885.46-1.27.08-.38.08-.72-.014-1.043-.095-.325-.297-.675-.68-1.06a1.6 1.6 0 0 0-1.475.36l-4.95 4.452a1.602 1.602 0 0 0-.513.952l-.427 2.83c.672.59 2.328 2.316 3.335 4.711.09.21.175.43.253.653z"
+                  />
                 </svg>
                 <span>Obsidian</span>
               </div>
@@ -451,10 +472,34 @@
                   <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                 </svg>
               </div>
+              <span class="year">Apr 2026 – Present</span>
+            </div>
+            <h3>Python Developer</h3>
+            <p class="company">NOXIA Security • Bailly Romainvilliers</p>
+            <p class="description">
+              Development of in-house tools for the company.
+            </p>
+          </div>
+
+          <div class="card experience-card">
+            <div class="experience-header">
+              <div class="icon-wrapper">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
               <span class="year">Nov 2025 – Jan 2026</span>
             </div>
             <h3>Infrastructure & Backend Python Engineer Intern</h3>
-            <p class="company">Maison Astéria</p>
+            <p class="company">Maison Astéria • Bazainville</p>
             <p class="description">
               Migration from Docker to LXC/Waydroid, Python and Bash
               orchestration scripting, and Linux server deployment for bot
@@ -480,7 +525,7 @@
               <span class="year">May 2025 – Jun 2025</span>
             </div>
             <h3>Full Stack Developer & Automation Intern</h3>
-            <p class="company">Rhôn Telecom</p>
+            <p class="company">Rhôn Telecom • Champs-sur-Marne</p>
             <p class="description">
               Developed automation tools with VBA, Node.js, and Next.js to
               improve productivity and streamline network operations.
@@ -497,15 +542,17 @@
                   fill="none"
                   stroke="currentColor"
                   stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 >
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                 </svg>
               </div>
               <span class="year">2024</span>
             </div>
             <h3>Scratch Programming Workshop for Children</h3>
-            <p class="company">Teaching Internship</p>
+            <p class="company">Teaching Internship • Cergy</p>
             <p class="description">
               Created an introduction to coding and guided students through
               their first programming experience, fostering creativity and
@@ -523,15 +570,17 @@
                   fill="none"
                   stroke="currentColor"
                   stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 >
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
                 </svg>
               </div>
               <span class="year">2020</span>
             </div>
             <h3>Observation Internship</h3>
-            <p class="company">Alstom Transport</p>
+            <p class="company">Alstom Transport • Le Creusot</p>
             <p class="description">
               Discovered industrial processes and railway production systems,
               gaining insights into large-scale engineering projects.
@@ -547,7 +596,7 @@
           <div class="card education-card">
             <span class="year">2023–2026</span>
             <h3>Bachelor Human-IT</h3>
-            <p class="company">ENSEA de Cergy</p>
+            <p class="company">ENSEA • Cergy</p>
             <p class="description">
               Specializing in information technologies and their societal
               impact, data science, and software development.
@@ -557,7 +606,7 @@
           <div class="card education-card">
             <span class="year">2023</span>
             <h3>Baccalauréat Général</h3>
-            <p class="company">Lycée Bossuet de Meaux</p>
+            <p class="company">Lycée Bossuet • Meaux</p>
             <p class="description">
               Mathématiques expertes - Strong foundation in mathematics and
               analytical thinking.
@@ -747,10 +796,12 @@
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               >
-                <path d="M9 18V5l12-2v13"></path>
-                <circle cx="6" cy="18" r="3"></circle>
-                <circle cx="18" cy="16" r="3"></circle>
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                ></path>
               </svg>
               <h2>Interests</h2>
             </div>
@@ -763,20 +814,20 @@
                   fill="none"
                   stroke="currentColor"
                   stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 >
-                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                  <path d="M4 22h16"></path>
-                  <path
-                    d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"
-                  ></path>
-                  <path
-                    d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"
-                  ></path>
-                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2z"></path>
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 16l4-3-1.5-5h-5L8 13z"></path>
+                  <path d="M16 13l5 1.5"></path>
+                  <path d="M14.5 8L18 4.5"></path>
+                  <path d="M9.5 8L6 4.5"></path>
+                  <path d="M8 13L3 14.5"></path>
+                  <path d="M12 16v6"></path>
                 </svg>
                 <span>Football</span>
               </div>
+
               <div class="card interest-card">
                 <svg
                   width="24"
@@ -785,20 +836,16 @@
                   fill="none"
                   stroke="currentColor"
                   stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 >
-                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                  <path d="M4 22h16"></path>
-                  <path
-                    d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"
-                  ></path>
-                  <path
-                    d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"
-                  ></path>
-                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2z"></path>
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M2 12c3-4 7-4 10 0s7 4 10 0"></path>
+                  <path d="M12 2c-4 3-4 7 0 10s4 7 0 10"></path>
                 </svg>
                 <span>Handball</span>
               </div>
+
               <div class="card interest-card">
                 <svg
                   width="24"
@@ -812,8 +859,9 @@
                   <circle cx="6" cy="18" r="3"></circle>
                   <circle cx="18" cy="16" r="3"></circle>
                 </svg>
-                <span>Music (Cornet)</span>
+                <span>Music</span>
               </div>
+
               <div class="card interest-card">
                 <svg
                   width="24"
@@ -822,12 +870,24 @@
                   fill="none"
                   stroke="currentColor"
                   stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 >
-                  <rect x="6" y="2" width="12" height="20" rx="2"></rect>
-                  <circle cx="12" cy="8" r="1"></circle>
+                  <path
+                    d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"
+                  ></path>
+
+                  <path d="M6 11h4"></path>
+                  <path d="M8 9v4"></path>
+
+                  <line x1="16" y1="13" x2="16.01" y2="13"></line>
+                  <line x1="16" y1="9" x2="16.01" y2="9"></line>
+                  <line x1="14" y1="11" x2="14.01" y2="11"></line>
+                  <line x1="18" y1="11" x2="18.01" y2="11"></line>
                 </svg>
                 <span>Gaming</span>
               </div>
+
               <div class="card interest-card">
                 <svg
                   width="24"
@@ -943,11 +1003,23 @@
             </a>
           </div>
         </div>
-
         <div class="footer-bottom">
           <p>© 2025 Zoléni Kokolo Zassi. All rights reserved.</p>
           <p class="built-with">
-            Built with <span class="heart">❤️</span> by Zoléni Kokolo Zassi
+            Built with
+            <svg
+              class="heart-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="#10b981"
+              stroke="none"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              ></path>
+            </svg>
+            by Zoléni Kokolo Zassi
           </p>
         </div>
       </div>
