@@ -93,3 +93,4 @@ android-sdk/ -e
 # claude-agent
 CLAUDE.md
 .claude/
+others/
