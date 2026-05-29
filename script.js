@@ -33,6 +33,8 @@ mobileMenuBtn.addEventListener('click', () => {
     mobileMenuBtn.classList.toggle('active');
     mobileMenu.classList.toggle('active');
     header.classList.toggle('menu-open');
+    const isOpen = mobileMenu.classList.contains('active');
+    mobileMenuBtn.setAttribute('aria-expanded', isOpen);
 });
 
 // Smooth scroll for all anchor links

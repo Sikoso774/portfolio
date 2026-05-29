@@ -75,6 +75,7 @@ header {
 header.scrolled,
 header.menu-open {
     background: rgba(0, 0, 0, 0.95);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -354,6 +355,7 @@ section {
 .section-header {
     text-align: center;
     margin-bottom: 48px;
+    margin-top: 60px;
 }
 
 .section-header h2 {
@@ -472,7 +474,7 @@ section {
 }
 
 .skills-icons-row {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     gap: 12px;
 }
